@@ -77,6 +77,18 @@ The app will open at `http://localhost:3000`.
 
 ---
 
+## 🌐 Live Demo
+
+You can view the live, deployed version of this app here:
+
+**[Live App on Netlify](https://todo-mui-app.netlify.app/)**
+
+You can also access the source code on GitHub:  
+**[Source Code on Github](https://github.com/sadaqat120/todo-mui-app)**
+
+---
+
+
 ## ✅ Final Notes
 
 - App is fully responsive and polished.
