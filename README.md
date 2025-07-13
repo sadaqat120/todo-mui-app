@@ -1,63 +1,85 @@
-# IBM Navbar Task – React + Tailwind CSS
+# 📝 Responsive ToDo App (React + MUI)
 
-This project recreates the responsive **IBM.com navigation bar** using **React.js** and **Tailwind CSS**, as part of a frontend evaluation assignment for **Dextersol**.
+A clean, responsive, and fully interactive ToDo Application built using **React 18** and **Material UI (v7)**.
 
-
-## 📌 Features
-
-- ✅ Fully responsive layout  
-- ✅ Dropdown menus for key nav items  
-- ✅ Sticky top navbar behavior  
-- ✅ Mobile hamburger menu with collapsible sections  
-- ✅ Icons for search, chat, language, and user  
-- ✅ Built with React.js and Tailwind CSS  
+This project was developed as part of a take-home frontend engineering task for **XeuroTech** to demonstrate React component design, responsive UI/UX, and MUI usage.
 
 ---
 
-## 🚀 Live Demo
+## 🚀 Features
 
-🌐 **Netlify Live URL**: [https://ibm-navbar-clone.netlify.app](https://ibm-navbar-clone.netlify.app)  
-💻 **GitHub Repo**: [https://github.com/sadaqat120/ibm-navbar-task.git](https://github.com/sadaqat120/ibm-navbar-task.git)
-
-
----
-
-## 🛠️ Tech Stack
-
-- **React.js**
-- **Tailwind CSS**
-- Responsive Design
-- Mobile-first layout
-- Dropdowns with pure React state
+- ✅ Add new tasks (with required title + optional description)
+- ✅ Edit existing tasks
+- ✅ Delete tasks
+- ✅ Mark tasks as complete/incomplete (checkbox)
+- ✅ Sort tasks by **Date** or **Completion status**
+- ✅ Filter tasks: **All**, **Completed**, **Pending**
+- ✅ Drag-and-drop reordering (via `react-beautiful-dnd`)
+- ✅ Responsive UI for mobile / tablet / desktop
+- ✅ Dark / Light mode toggle (with MUI theme system)
+- ✅ LocalStorage persistence (data survives refreshes)
+- ✅ Clean transitions and interactive hover effects
 
 ---
 
-## 📦 How to Run Locally
+## 💻 Tech Stack
 
-```bash
-# Clone this repo
-git clone https://github.com/sadaqat120/ibm-navbar-task.git
-
-# Move into project folder
-cd ibm-navbar-task
-
-# Install dependencies
-npm install
-
-# Run the app
-npm start
-```
+- **React 18 (Create React App)**
+- **Material UI v7**
+- `react-beautiful-dnd` (for drag-and-drop)
+- `date-fns` (for human-readable timestamps)
 
 ---
 
-## 🙌 Acknowledgements
+## 🧩 Bonus Features Implemented
 
-- Design inspired by the official [IBM homepage](https://www.ibm.com/)
-- Created for a Dextersol hiring task
+| Feature | Status |
+|--------|--------|
+| Dark/Light Theme Toggle | ✅ Done |
+| LocalStorage Persistence | ✅ Done |
+| Drag-and-drop Reordering | ✅ Done |
+| Task Filters (All, Completed, Pending) | ✅ Done |
+| Clean reusable components | ✅ Done |
+| TypeScript | ❌ Skipped (by choice for simplicity)
 
 ---
 
-## 📧 Contact
+## 🛠 Setup Instructions
 
-- **Developer**: Sadaqat Rasool
-- **Email**: sadaqatrasoolmsr@gmail.com
+To run the app locally:
+
+1. **Clone the repo**:
+   ```bash
+   git clone https://github.com/sadaqat120/todo-mui-app.git
+   cd todo-mui-app
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Start development server**:
+   ```bash
+   npm start
+   ```
+
+The app will open at `http://localhost:3000`.
+
+---
+
+## ⚖️ Trade-offs & Decisions
+
+- ❌ **TypeScript not used**: Deliberately kept JavaScript for faster delivery and simplicity. Type safety is valuable but overkill for a small app.
+- ✅ **Used `localStorage`** instead of IndexedDB: localStorage is sufficient for storing simple task data in this context.
+- ✅ **Component-level separation** was prioritized: Every UI piece is modular and reusable.
+- ✅ **MUI Theming**: Dark/Light mode powered via `ThemeProvider` and `ColorModeContext`.
+
+---
+
+## ✅ Final Notes
+
+- App is fully responsive and polished.
+- All required and bonus criteria are complete.
+
+Thank you for reviewing! 🙌
